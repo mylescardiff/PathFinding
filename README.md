@@ -1,7 +1,6 @@
-
-    <h1>A C++ Pathfinding Implementation using A*</h1>
-    <h2>The Scene</h2>
-    <p>
+<h1>A C++ Pathfinding Implementation using A*</h1>
+<h2>The Scene</h2>
+<p>
         The world is setup with light green grass tiles, dark green forest tiles, blue water tiles and a bridge. Forest tiles have a higher cost (weight), water tiles are impassible. There is only one agent on screen. It will pathfinder to the square you click in the world. In debug mode you will see the agent's node expansion as it attempts to find a way to that location. If it cannot find one (e.g. if you click the island in the middle) it will expand the entire walkable map and fail.
     </p>
     <h2>How To Run</h2>
