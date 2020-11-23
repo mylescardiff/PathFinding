@@ -14,7 +14,6 @@
     <p>
         This is a pathfinding implementation in C++, using the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* Algorithm</a>. It uses my 2D game engine, Sloth Engine, for basic rendering and component based
         actors. This project uses an engine-side Grid system and an A* pathfinding algorithm build on that grid.
-
     </p>
     <p>
         This implementation is frame-sliced, meaning it will spread its workload over a few frames if necessary to maintain performance. You will find the implementation in <b>(SlothEngine Project) Logic\Grid\GridSystem.h</b>
