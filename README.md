@@ -18,6 +18,5 @@
     <p>
         This implementation is frame-sliced, meaning it will spread its workload over a few frames if necessary to maintain performance. You will find the implementation in <b>(SlothEngine Project) Logic\Grid\GridSystem.h</b>
     </p>
-
     <p>… it is in the functions FindPathAStar and PathAStarInternal. </p>
     <p><b>FindPathAStar</b> initiates the pathfinding process, and <b>PathAStarInternal</b> is called each frame while the process is still working.</p>
