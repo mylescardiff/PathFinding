@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17763.0
+Release|Win32|C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\|

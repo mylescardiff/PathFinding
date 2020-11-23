@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <Processes>
+   
+    <!--
+    
+    <Animation name="ZombieEmerge" path=".\Assets\Zombie\Emerge\Emerge-Sequence.png" frame-timer="0.2" frame-length="148" num-frames="7" loop="false" delay="2"/>
+    <Animation name="ZombieWalk" path=".\Assets\Zombie\Lumber\Lumber-Sequence.png" frame-timer="0.1" frame-length="148" num-frames="8" loop="false" delay="2"/>
+    <Animation name="ZombieAttack" path=".\Assets\Zombie\Attack\Attack-Sequence.png" frame-timer="0.1" frame-length="148" num-frames="6" loop="false" delay="2"/>
+    <Animation name="ZombieFall" path=".\Assets\Zombie\Fall\Fall-Sequence.png" frame-timer="0.1" frame-length="148" num-frames="12" loop="false" delay="2"/>
+    
+    -->
+
+  </Processes>
+  
+

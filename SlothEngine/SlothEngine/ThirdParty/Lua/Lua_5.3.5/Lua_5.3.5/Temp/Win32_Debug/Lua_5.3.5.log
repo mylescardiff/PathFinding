@@ -1,0 +1,39 @@
+﻿  lapi.c
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\lua\lua_5.3.5\lua_5.3.5\source\lapi.c(398): warning C4244: 'return': conversion from 'lua_Unsigned' to 'size_t', possible loss of data
+  lauxlib.c
+  lbaselib.c
+  lbitlib.c
+  lcode.c
+  lcorolib.c
+  lctype.c
+  ldblib.c
+  ldebug.c
+  ldo.c
+  ldump.c
+  lfunc.c
+  lgc.c
+  linit.c
+  liolib.c
+  llex.c
+  lmathlib.c
+  lmem.c
+  loadlib.c
+  lobject.c
+  Generating Code...
+  Compiling...
+  lopcodes.c
+  loslib.c
+  lparser.c
+  lstate.c
+  lstring.c
+  lstrlib.c
+  ltable.c
+  ltablib.c
+  ltm.c
+  lundump.c
+  lutf8lib.c
+  lvm.c
+  lzio.c
+  Generating Code...
+     Creating library C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\Win32_Debug\Lua_5.3.5.lib and object C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\Win32_Debug\Lua_5.3.5.exp
+  Lua_5.3.5.vcxproj -> C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\Win32_Debug\Lua_5.3.5.dll

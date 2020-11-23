@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Star name="Sol" type="0" index="300">
+    <Planet name="Pluto" type="0" radius="10" position-x="80" position-y="450" orbit="800"></Planet>
+    <Planet name="Neptune" type="1" radius="40" position-x="120" position-y="450" orbit="700"></Planet>
+    <Planet name="Uranus" type="1" radius="40" position-x="220" position-y="450" orbit="600"></Planet>
+    <Planet name="Saturn" type="1" radius="50" position-x="320" position-y="450" orbit="600"></Planet>
+    <Planet name="Jupiter" type="1" radius="60" position-x="420" position-y="450" orbit="500"></Planet>
+    <Planet name="Mars" type="0" radius="20" position-x="520" position-y="450" orbit="400"></Planet>
+    <Planet name="Earth" type="0" radius="30" position-x="520" position-y="450" orbit="400"></Planet>
+    <Planet name="Venus" type="0" radius="30" position-x="520" position-y="450" orbit="400"></Planet>
+    <Planet name="Mercury" type="0" radius="20" position-x="520" position-y="450" orbit="400"></Planet>
+  </Star>
+  <Star name="Rau">
+    <Planet name="Boron" type="0" radius="10" position-x="80" position-y="450" orbit="800"></Planet>
+    <Planet name="Phalon" type="0" radius="15" position-x="200" position-y="450" orbit="700"></Planet>
+    <Planet name="Thalon" type="0" radius="20" position-x="350" position-y="450" orbit="450"></Planet>
+    <Planet name="Krypton" type="0" radius="40" position-x="500" position-y="450" orbit="250"></Planet>
+    <Planet name="Halon" type="0" radius="30" position-x="600" position-y="450" orbit="150"></Planet>
+  </Star>
+</Root>
+

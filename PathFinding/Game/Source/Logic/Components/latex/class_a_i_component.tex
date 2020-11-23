@@ -1,0 +1,184 @@
+\hypertarget{class_a_i_component}{}\doxysection{A\+I\+Component Class Reference}
+\label{class_a_i_component}\index{AIComponent@{AIComponent}}
+
+
+Adds some AI functionality to the actor  
+
+
+
+
+{\ttfamily \#include $<$A\+I\+Component.\+h$>$}
+
+Inheritance diagram for A\+I\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_i_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const Id \mbox{\hyperlink{class_a_i_component_aad1cb951d005d2a5cd692e29e9a2c0f1}{Get\+Identifier}} () override
+\begin{DoxyCompactList}\small\item\em Get the unique identifier for this component \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{class_a_i_component_aa08e535aa46d8d8da66801651956ea39}{Get\+Name}} () override
+\begin{DoxyCompactList}\small\item\em Get the name of this component \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_i_component_ac0e093b9d74e3a103d93d843a1795a95}{A\+I\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_a_i_component_a871e9894512a70a824f774c98df402f7}{$\sim$\+A\+I\+Component}} ()
+\begin{DoxyCompactList}\small\item\em This is here because without it, there\textquotesingle{}s a heap corruption issue deleting the component. Not sure why but I think it has something to do with this component being in the game logic and being deleted from Engine logic. \end{DoxyCompactList}\item 
+virtual I\+Component $\ast$ \mbox{\hyperlink{class_a_i_component_a9717b6e1d76b99ef8479bf5586258c80}{Copy}} (slth\+::\+Actor $\ast$p\+New\+Owner) override
+\begin{DoxyCompactList}\small\item\em Creates a copy of the transform component \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_a_i_component_a9f5ee23b9b2b76fd54216f53b89cbca1}{Init}} (Xml\+Data $\ast$xml\+Element) override
+\begin{DoxyCompactList}\small\item\em Initilizes the transform component from X\+ML node (see /data/actors.xml for syntax) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_a_i_component_a2186f6a57afe719ec1cd7a512bdf2899}{Post\+Init}} () override
+\begin{DoxyCompactList}\small\item\em This does nothing at the moment \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_i_component_a93c876fd6e3c8e13b5833dc0f36f589d}{Update}} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updates the transform and velocity based on info from the AI \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_i_component_a7dd4ac557851fc8d197f74588f596b78}\label{class_a_i_component_a7dd4ac557851fc8d197f74588f596b78}} 
+A\+I\+State {\bfseries Get\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr Id \mbox{\hyperlink{class_a_i_component_a87fe31167c44739e42ba9930a88535cc}{Identifier}} = 7
+\begin{DoxyCompactList}\small\item\em Complie-\/time unique ID (int) for the component type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adds some AI functionality to the actor 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_i_component_ac0e093b9d74e3a103d93d843a1795a95}\label{class_a_i_component_ac0e093b9d74e3a103d93d843a1795a95}} 
+\index{AIComponent@{AIComponent}!AIComponent@{AIComponent}}
+\index{AIComponent@{AIComponent}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{AIComponent()}{AIComponent()}}
+{\footnotesize\ttfamily A\+I\+Component\+::\+A\+I\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor 
+
+\mbox{\Hypertarget{class_a_i_component_a871e9894512a70a824f774c98df402f7}\label{class_a_i_component_a871e9894512a70a824f774c98df402f7}} 
+\index{AIComponent@{AIComponent}!````~AIComponent@{$\sim$AIComponent}}
+\index{````~AIComponent@{$\sim$AIComponent}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$AIComponent()}{~AIComponent()}}
+{\footnotesize\ttfamily virtual A\+I\+Component\+::$\sim$\+A\+I\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+This is here because without it, there\textquotesingle{}s a heap corruption issue deleting the component. Not sure why but I think it has something to do with this component being in the game logic and being deleted from Engine logic. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_i_component_a9717b6e1d76b99ef8479bf5586258c80}\label{class_a_i_component_a9717b6e1d76b99ef8479bf5586258c80}} 
+\index{AIComponent@{AIComponent}!Copy@{Copy}}
+\index{Copy@{Copy}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily slth\+::\+I\+Component $\ast$ A\+I\+Component\+::\+Copy (\begin{DoxyParamCaption}\item[{slth\+::\+Actor $\ast$}]{p\+New\+Owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates a copy of the transform component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+New\+Owner} & The new owning actor of this component\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the new copy
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_i_component_aad1cb951d005d2a5cd692e29e9a2c0f1}\label{class_a_i_component_aad1cb951d005d2a5cd692e29e9a2c0f1}} 
+\index{AIComponent@{AIComponent}!GetIdentifier@{GetIdentifier}}
+\index{GetIdentifier@{GetIdentifier}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{GetIdentifier()}{GetIdentifier()}}
+{\footnotesize\ttfamily virtual const Id A\+I\+Component\+::\+Get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the unique identifier for this component 
+
+\begin{DoxyReturn}{Returns}
+Unsigned int unique ID
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_i_component_aa08e535aa46d8d8da66801651956ea39}\label{class_a_i_component_aa08e535aa46d8d8da66801651956ea39}} 
+\index{AIComponent@{AIComponent}!GetName@{GetName}}
+\index{GetName@{GetName}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ A\+I\+Component\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this component 
+
+\begin{DoxyReturn}{Returns}
+String unique name
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_i_component_a9f5ee23b9b2b76fd54216f53b89cbca1}\label{class_a_i_component_a9f5ee23b9b2b76fd54216f53b89cbca1}} 
+\index{AIComponent@{AIComponent}!Init@{Init}}
+\index{Init@{Init}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool A\+I\+Component\+::\+Init (\begin{DoxyParamCaption}\item[{Xml\+Data $\ast$}]{xml\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initilizes the transform component from X\+ML node (see /data/actors.xml for syntax) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Element} & The tinyxml node pointer contianing the data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_i_component_a2186f6a57afe719ec1cd7a512bdf2899}\label{class_a_i_component_a2186f6a57afe719ec1cd7a512bdf2899}} 
+\index{AIComponent@{AIComponent}!PostInit@{PostInit}}
+\index{PostInit@{PostInit}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{PostInit()}{PostInit()}}
+{\footnotesize\ttfamily virtual bool A\+I\+Component\+::\+Post\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This does nothing at the moment 
+
+\begin{DoxyReturn}{Returns}
+True
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_i_component_a93c876fd6e3c8e13b5833dc0f36f589d}\label{class_a_i_component_a93c876fd6e3c8e13b5833dc0f36f589d}} 
+\index{AIComponent@{AIComponent}!Update@{Update}}
+\index{Update@{Update}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void A\+I\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Updates the transform and velocity based on info from the AI 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & Frame time\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_i_component_a87fe31167c44739e42ba9930a88535cc}\label{class_a_i_component_a87fe31167c44739e42ba9930a88535cc}} 
+\index{AIComponent@{AIComponent}!Identifier@{Identifier}}
+\index{Identifier@{Identifier}!AIComponent@{AIComponent}}
+\doxysubsubsection{\texorpdfstring{Identifier}{Identifier}}
+{\footnotesize\ttfamily constexpr Id A\+I\+Component\+::\+Identifier = 7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Complie-\/time unique ID (int) for the component type 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_a_i_component_8h}{A\+I\+Component.\+h}}\item 
+A\+I\+Component.\+cpp\end{DoxyCompactItemize}

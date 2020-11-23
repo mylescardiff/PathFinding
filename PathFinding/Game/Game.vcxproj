@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|Win32">
+      <Configuration>Development</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|x64">
+      <Configuration>Development</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{501CA943-4301-4A41-B57A-B9BC5F4B9CDD}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PathFinding</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\SlothEngine\SlothEngine\Source;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)..\SlothEngine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\SlothEngine\SlothEngine\Source;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)..\SlothEngine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\Engine\SlothEngine\Source;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)..\Engine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\SlothEngine\SlothEngine\Source;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)..\SlothEngine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\SlothEngine\SlothEngine\Source;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)..\SlothEngine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <IncludePath>$(ProjectDir)Source;$(SolutionDir)..\Engine\SlothEngine\Source;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Box2D\include;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\include;$(IncludePath);$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\include;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\ZLib\include</IncludePath>
+    <OutDir>$(SolutionDir)Builds\$(Platform)_$(Configuration)\</OutDir>
+    <LibraryPath>$(SolutionDir)..\Engine\SlothEngine\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\lib\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\$(Platform)\;$(SolutionDir)..\Engine\SlothEngine\ThirdParty\ZLib\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-system-s-d.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies);;zlibstat.lib</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-system-s-d.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies);zlibstat.lib;zlibstat.lib</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\SlothEngine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;Lua_5.3.5.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\SFML\$(Platform)\bin\openal32.dll" "$(OutDir)" /y /d
+xcopy "$(SolutionDir)..\Engine\SlothEngine\ThirdParty\Lua\$(Platform)\*.dll" "$(OutDir)" /y /d</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Graph\Graph.cpp" />
+    <ClCompile Include="Source\Graph\GraphNode.cpp" />
+    <ClCompile Include="Source\Graph\GraphRule.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\AIComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\ChaseBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\IBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\IdleBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\PatrolBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\SpeakBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\TeleportBehavior.cpp" />
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\TurnBehavior.cpp" />
+    <ClCompile Include="Source\Logic\GameApp.cpp" />
+    <ClCompile Include="Source\Logic\GameLogic.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Graph\Graph.h" />
+    <ClInclude Include="Source\Graph\GraphNode.h" />
+    <ClInclude Include="Source\Graph\GraphRule.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\AIComponent.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\ChaseBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\IBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\IdleBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\PatrolBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\SpeakBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\TeleportBehavior.h" />
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\TurnBehavior.h" />
+    <ClInclude Include="Source\Logic\GameApp.h" />
+    <ClInclude Include="Source\Logic\GameLogic.h" />
+    <ClInclude Include="Source\tinyxml2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\startup.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\actors.xml" />
+    <Xml Include="Data\animations.xml" />
+    <Xml Include="Data\river-scene.xml" />
+    <Xml Include="Data\ui.xml" />
+    <Xml Include="Data\world.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SlothEngine\SlothEngine\SlothEngine.vcxproj">
+      <Project>{54083fb7-1d4d-49f8-b47e-8c9a6d55e5eb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="class_a_i_component" kind="class"><name>AIComponent</name>
+    <member refid="class_a_i_component_1a87fe31167c44739e42ba9930a88535cc" kind="variable"><name>Identifier</name></member>
+    <member refid="class_a_i_component_1a96dffb2f753fb6a8d8c6b3e6ab98cd6c" kind="variable"><name>m_state</name></member>
+    <member refid="class_a_i_component_1a5366a1e41c063724207a830cf496bdd3" kind="variable"><name>m_waypoints</name></member>
+    <member refid="class_a_i_component_1ae9bff40d2c5ced5309cef136d1ff4f2d" kind="variable"><name>m_currentWaypointTarget</name></member>
+    <member refid="class_a_i_component_1a871cf8e36ed8e99277507cf12f5f5450" kind="variable"><name>m_travelSpeed</name></member>
+    <member refid="class_a_i_component_1aae6c12703d2170184e41fa1be60d72c7" kind="variable"><name>m_acceleration</name></member>
+    <member refid="class_a_i_component_1aad1cb951d005d2a5cd692e29e9a2c0f1" kind="function"><name>GetIdentifier</name></member>
+    <member refid="class_a_i_component_1aa08e535aa46d8d8da66801651956ea39" kind="function"><name>GetName</name></member>
+    <member refid="class_a_i_component_1ac0e093b9d74e3a103d93d843a1795a95" kind="function"><name>AIComponent</name></member>
+    <member refid="class_a_i_component_1a871e9894512a70a824f774c98df402f7" kind="function"><name>~AIComponent</name></member>
+    <member refid="class_a_i_component_1a9717b6e1d76b99ef8479bf5586258c80" kind="function"><name>Copy</name></member>
+    <member refid="class_a_i_component_1a9f5ee23b9b2b76fd54216f53b89cbca1" kind="function"><name>Init</name></member>
+    <member refid="class_a_i_component_1a2186f6a57afe719ec1cd7a512bdf2899" kind="function"><name>PostInit</name></member>
+    <member refid="class_a_i_component_1a93c876fd6e3c8e13b5833dc0f36f589d" kind="function"><name>Update</name></member>
+    <member refid="class_a_i_component_1a7dd4ac557851fc8d197f74588f596b78" kind="function"><name>GetState</name></member>
+  </compound>
+  <compound refid="_a_i_component_8cpp" kind="file"><name>AIComponent.cpp</name>
+  </compound>
+  <compound refid="_a_i_component_8h" kind="file"><name>AIComponent.h</name>
+    <member refid="_a_i_component_8h_1a5593d355edf39bc1e432b7e4f2f2b211" kind="enum"><name>AIState</name></member>
+    <member refid="_a_i_component_8h_1a5593d355edf39bc1e432b7e4f2f2b211ae599161956d626eda4cb0a5ffb85271c" kind="enumvalue"><name>Idle</name></member>
+    <member refid="_a_i_component_8h_1a5593d355edf39bc1e432b7e4f2f2b211adf7a8712303eeadde5d19f0e2955085c" kind="enumvalue"><name>Patrol</name></member>
+    <member refid="_a_i_component_8h_1a5593d355edf39bc1e432b7e4f2f2b211a30af5ec2f38f5b45253f7b4e4ac0c814" kind="enumvalue"><name>MaxStates</name></member>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+ 
+  <!--<Actor ID="Instructions" hidden="false">
+    <Components>
+      <Transform position-left="100" position-top="-40" position-right="-10" position-bottom="-10" rotation="0"
+                  anchor-left="0" anchor-right="1" anchor-top="1" anchor-bottom="1"></Transform>
+      <Text r="255" g="255" b="255" size="20">Agents have waypoints, angular velocity, speed and accelleration. All values set in actors.xml</Text>
+    </Components>
+  </Actor>-->
+  
+</Root>

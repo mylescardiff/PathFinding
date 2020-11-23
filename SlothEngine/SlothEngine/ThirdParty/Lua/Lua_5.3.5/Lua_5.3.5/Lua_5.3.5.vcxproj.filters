@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{5bfbfed2-142e-4186-a9e6-487b7e76ee7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\lapi.c" />
+    <ClCompile Include="Source\lauxlib.c" />
+    <ClCompile Include="Source\lbaselib.c" />
+    <ClCompile Include="Source\lbitlib.c" />
+    <ClCompile Include="Source\lcode.c" />
+    <ClCompile Include="Source\lcorolib.c" />
+    <ClCompile Include="Source\lctype.c" />
+    <ClCompile Include="Source\ldblib.c" />
+    <ClCompile Include="Source\ldebug.c" />
+    <ClCompile Include="Source\ldo.c" />
+    <ClCompile Include="Source\ldump.c" />
+    <ClCompile Include="Source\lfunc.c" />
+    <ClCompile Include="Source\lgc.c" />
+    <ClCompile Include="Source\linit.c" />
+    <ClCompile Include="Source\liolib.c" />
+    <ClCompile Include="Source\llex.c" />
+    <ClCompile Include="Source\lmathlib.c" />
+    <ClCompile Include="Source\lmem.c" />
+    <ClCompile Include="Source\loadlib.c" />
+    <ClCompile Include="Source\lobject.c" />
+    <ClCompile Include="Source\lopcodes.c" />
+    <ClCompile Include="Source\loslib.c" />
+    <ClCompile Include="Source\lparser.c" />
+    <ClCompile Include="Source\lstate.c" />
+    <ClCompile Include="Source\lstring.c" />
+    <ClCompile Include="Source\lstrlib.c" />
+    <ClCompile Include="Source\ltable.c" />
+    <ClCompile Include="Source\ltablib.c" />
+    <ClCompile Include="Source\ltm.c" />
+    <ClCompile Include="Source\lundump.c" />
+    <ClCompile Include="Source\lutf8lib.c" />
+    <ClCompile Include="Source\lvm.c" />
+    <ClCompile Include="Source\lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\lapi.h" />
+    <ClInclude Include="Source\lauxlib.h" />
+    <ClInclude Include="Source\lcode.h" />
+    <ClInclude Include="Source\lctype.h" />
+    <ClInclude Include="Source\ldebug.h" />
+    <ClInclude Include="Source\ldo.h" />
+    <ClInclude Include="Source\lfunc.h" />
+    <ClInclude Include="Source\lgc.h" />
+    <ClInclude Include="Source\llex.h" />
+    <ClInclude Include="Source\llimits.h" />
+    <ClInclude Include="Source\lmem.h" />
+    <ClInclude Include="Source\lobject.h" />
+    <ClInclude Include="Source\lopcodes.h" />
+    <ClInclude Include="Source\lparser.h" />
+    <ClInclude Include="Source\lprefix.h" />
+    <ClInclude Include="Source\lstate.h" />
+    <ClInclude Include="Source\lstring.h" />
+    <ClInclude Include="Source\ltable.h" />
+    <ClInclude Include="Source\ltm.h" />
+    <ClInclude Include="Source\lua.h" />
+    <ClInclude Include="Source\lua.hpp" />
+    <ClInclude Include="Source\luaconf.h" />
+    <ClInclude Include="Source\lualib.h" />
+    <ClInclude Include="Source\lundump.h" />
+    <ClInclude Include="Source\lvm.h" />
+    <ClInclude Include="Source\lzio.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,76 @@
+﻿  Actor.gen.cpp
+  ApplicationLayer.cpp
+  IResource.cpp
+  MusicResource.cpp
+  ResourceFile.cpp
+  SoundResource.cpp
+  TextureResource.cpp
+  ISystem.cpp
+  WindowsSystem.cpp
+  IWindow.cpp
+  SFMLWindow.cpp
+  SFMLAudioSystem.cpp
+  SFMLMusic.cpp
+  SFMLSoundEffect.cpp
+  ITexture.cpp
+  SfmlDebugPhysicsRenderer.cpp
+  SFMLGraphics.cpp
+  SFMLTexture.cpp
+  IKeyboard.cpp
+  IKeyboard.gen.cpp
+  Generating Code...
+  Compiling...
+  IMouse.cpp
+  IMouse.gen.cpp
+  Logger.cpp
+  Actor.cpp
+  ActorFactory.cpp
+  Animation.cpp
+  AnimationManager.cpp
+  AnimationComponent.cpp
+  ColliderComponent.cpp
+  IComponent.cpp
+  IDrawableComponent.cpp
+  RenderBoxComponent.cpp
+  RigidBodyComponent.gen.cpp
+  RigidBodyComponent.cpp
+  SpriteComponent.cpp
+  TextComponent.cpp
+  TransformComponent.cpp
+  TransformComponent.gen.cpp
+  TriggerComponent.cpp
+  CollisionEvent.cpp
+  Generating Code...
+  Compiling...
+  EventDispatcher.cpp
+  IEvent.cpp
+  GridSystem.cpp
+  GridTile.cpp
+  IGameLayer.cpp
+  IGameLayer.gen.cpp
+  AnimationProcess.cpp
+  IProcess.cpp
+  ProcessManager.cpp
+  Layer.cpp
+  Map.cpp
+  Tileset.cpp
+  World.cpp
+  BspTree.cpp
+  BspTreeNode.cpp
+  CellularAutomaton.cpp
+  DateTime.cpp
+  FileUtil.cpp
+  Noise.cpp
+  Rng.cpp
+  Generating Code...
+  Compiling...
+  Utilities.cpp
+  IView.cpp
+  tinyxml2.cpp
+  Generating Code...
+     Creating library C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\SlothEngine\SlothEngine\Libs\x64_Debug\SlothEngine.lib and object C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\SlothEngine\SlothEngine\Libs\x64_Debug\SlothEngine.exp
+  SlothEngine.vcxproj -> C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\SlothEngine\SlothEngine\Libs\x64_Debug\SlothEngine.dll
+  C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\SlothEngine\SlothEngine\Libs\x64_Debug\SlothEngine.dll
+  1 File(s) copied
+  C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\SlothEngine\SlothEngine\Libs\x64_Debug\SlothEngine.pdb
+  1 File(s) copied

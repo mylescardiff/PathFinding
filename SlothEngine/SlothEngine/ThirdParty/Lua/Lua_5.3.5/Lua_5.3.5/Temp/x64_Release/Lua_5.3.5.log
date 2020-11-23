@@ -1,0 +1,39 @@
+﻿  lapi.c
+  lauxlib.c
+  lbaselib.c
+  lbitlib.c
+  lcode.c
+  lcorolib.c
+  lctype.c
+  ldblib.c
+  ldebug.c
+  ldo.c
+  ldump.c
+  lfunc.c
+  lgc.c
+  linit.c
+  liolib.c
+  llex.c
+  lmathlib.c
+  lmem.c
+  loadlib.c
+  lobject.c
+  Compiling...
+  lopcodes.c
+  loslib.c
+  lparser.c
+  lstate.c
+  lstring.c
+  lstrlib.c
+  ltable.c
+  ltablib.c
+  ltm.c
+  lundump.c
+  lutf8lib.c
+  lvm.c
+  lzio.c
+     Creating library C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\x64_Release\Lua_5.3.5.lib and object C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\x64_Release\Lua_5.3.5.exp
+  Generating code
+  All 876 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Lua_5.3.5.vcxproj -> C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\Lua\Lua_5.3.5\Lua_5.3.5\Bin\x64_Release\Lua_5.3.5.dll

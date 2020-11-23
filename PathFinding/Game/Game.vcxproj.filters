@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Logic\GameApp.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameLogic.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Graph\Graph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graph\GraphNode.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graph\GraphRule.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\AIComponent.cpp">
+      <Filter>Logic\Components\AIComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\ChaseBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\PatrolBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\IBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\IdleBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\SpeakBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\TurnBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Components\AIComponent\Behaviors\TeleportBehavior.cpp">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tinyxml2.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{8d30319d-4251-49ca-8d15-2bf342a31ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{4ca7959f-1325-4d08-bafc-15bead1131e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{14841433-9cbd-4bfa-8f3e-dd509ef5fdb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{e5bd3817-9705-4cfd-bf0e-37b00ece1bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Components">
+      <UniqueIdentifier>{b9696a25-44d3-431d-8247-65e740c0dcdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Components\AIComponent">
+      <UniqueIdentifier>{7e7f27d6-7260-4347-9f5f-849409feef29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Components\AIComponent\Behaviors">
+      <UniqueIdentifier>{1dd60680-0b4d-4925-8fbe-aeeb05e8e998}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Logic\GameApp.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameLogic.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graph\GraphRule.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graph\Graph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graph\GraphNode.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\AIComponent.h">
+      <Filter>Logic\Components\AIComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\IBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\ChaseBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\PatrolBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\IdleBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\SpeakBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\TurnBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Components\AIComponent\Behaviors\TeleportBehavior.h">
+      <Filter>Logic\Components\AIComponent\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tinyxml2.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\startup.lua">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\actors.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\animations.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\ui.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\world.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\river-scene.xml">
+      <Filter>Data</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

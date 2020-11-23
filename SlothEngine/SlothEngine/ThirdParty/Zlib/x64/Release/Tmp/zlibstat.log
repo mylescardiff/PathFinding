@@ -1,0 +1,27 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzread.c(319): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzread.c(400): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzread.c(472): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  gzwrite.c
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzwrite.c(212): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzwrite.c(232): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\mcardiff2\perforce\lab-system-05\2019_spring_gap301_01\mcardiff\sloth\engine\slothengine\thirdparty\zlib\gzwrite.c(371): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  infback.c
+  inffas8664.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  ioapi.c
+  trees.c
+  uncompr.c
+  unzip.c
+  zip.c
+  zutil.c
+  Generating Code...
+  zlibstat.vcxproj -> C:\Users\mcardiff2\Perforce\LAB-SYSTEM-05\2019_Spring_GAP301_01\mcardiff\Sloth\Engine\SlothEngine\ThirdParty\ZLib\contrib\vstudio\vc14\x64\ZlibStatReleaseWithoutAsm\zlibstat.lib

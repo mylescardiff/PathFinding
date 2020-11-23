@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|Win32">
+      <Configuration>Development</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|x64">
+      <Configuration>Development</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{54083FB7-1D4D-49F8-B47E-8C9A6D55E5EB}</ProjectGuid>
+    <RootNamespace>SlothEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)ThirdParty\Box2D\include;$(ProjectDir)Source;$(ProjectDir)ThirdParty\SFML\$(Platform)\include;$(ProjectDir)ThirdParty\ZLib\include;$(ProjectDir)ThirdParty\Lua\include;$(ProjectDir)ThirdParty\VLD\include;$(ProjectDir)ThirdParty\tinyxml;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(ProjectDir)ThirdParty\Box2D\$(Platform)\$(Configuration)\lib\;$(ProjectDir)ThirdParty\SFML\$(Platform)\lib\;$(ProjectDir)ThirdParty\Zlib\$(Platform)\$(Configuration)\;$(ProjectDir)ThirdParty\Lua\$(Platform)\;$(ProjectDir)ThirdParty\VLD\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;SLTH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-system-s-d.lib;freetype.lib;winmm.lib;gdi32.lib;Box2D.lib;zlibstat.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies);Lua_5.3.5.lib</AdditionalDependencies>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;SLTH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-audio-s-d.lib;sfml-system-s-d.lib;freetype.lib;winmm.lib;gdi32.lib;Box2D.lib;zlibstat.lib;box2d.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies);Lua_5.3.5.lib</AdditionalDependencies>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;zlibstat.lib;Lua_5.3.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;SLTH_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;zlibstat.lib;Lua_5.3.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;zlibstat.lib;Lua_5.3.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;SLTH_DEV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-audio-s.lib;sfml-system-s.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Box2D.lib;zlibstat.lib;Lua_5.3.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.dll" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d
+xcopy "$(ProjectDir)Libs\$(Platform)_$(Configuration)\*.pdb" "$(SolutionDir)Builds\$(Platform)_$(Configuration)\" /y /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Logic\Actor.gen.cpp" />
+    <ClCompile Include="Source\Application\ApplicationLayer.cpp" />
+    <ClCompile Include="Source\Application\Resources\IResource.cpp" />
+    <ClCompile Include="Source\Application\Resources\MusicResource.cpp" />
+    <ClCompile Include="Source\Application\Resources\ResourceFile.cpp" />
+    <ClCompile Include="Source\Application\Resources\SoundResource.cpp" />
+    <ClCompile Include="Source\Application\Resources\TextureResource.cpp" />
+    <ClCompile Include="Source\Application\Systems\ISystem.cpp" />
+    <ClCompile Include="Source\Application\Systems\WindowsSystem.cpp" />
+    <ClCompile Include="Source\Application\Window\IWindow.cpp" />
+    <ClCompile Include="Source\Application\Window\SFMLWindow.cpp" />
+    <ClCompile Include="Source\Audio\SFMLAudioSystem.cpp" />
+    <ClCompile Include="Source\Audio\SFMLMusic.cpp" />
+    <ClCompile Include="Source\Audio\SFMLSoundEffect.cpp" />
+    <ClCompile Include="Source\Graphics\ITexture.cpp" />
+    <ClCompile Include="Source\Graphics\SfmlDebugPhysicsRenderer.cpp" />
+    <ClCompile Include="Source\Graphics\SFMLGraphics.cpp" />
+    <ClCompile Include="Source\Graphics\SFMLTexture.cpp" />
+    <ClCompile Include="Source\Input\IKeyboard.cpp" />
+    <ClCompile Include="Source\Input\IKeyboard.gen.cpp" />
+    <ClCompile Include="Source\Input\IMouse.cpp" />
+    <ClCompile Include="Source\Input\IMouse.gen.cpp" />
+    <ClCompile Include="Source\Logger\Logger.cpp" />
+    <ClCompile Include="Source\Logic\Actor.cpp" />
+    <ClCompile Include="Source\Logic\ActorFactory.cpp" />
+    <ClCompile Include="Source\Logic\Animation.cpp" />
+    <ClCompile Include="Source\Logic\AnimationManager.cpp" />
+    <ClCompile Include="Source\Logic\Components\AnimationComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\ColliderComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\IComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\IDrawableComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\RenderBoxComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\RigidBodyComponent.gen.cpp" />
+    <ClCompile Include="Source\Logic\Components\RigidBodyComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\SpriteComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\TextComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\TransformComponent.cpp" />
+    <ClCompile Include="Source\Logic\Components\TransformComponent.gen.cpp" />
+    <ClCompile Include="Source\Logic\Components\TriggerComponent.cpp" />
+    <ClCompile Include="Source\Logic\Events\CollisionEvent.cpp" />
+    <ClCompile Include="Source\Logic\Events\EventDispatcher.cpp" />
+    <ClCompile Include="Source\Logic\Events\IEvent.cpp" />
+    <ClCompile Include="Source\Logic\Grid\GridSystem.cpp" />
+    <ClCompile Include="Source\Logic\Grid\GridTile.cpp" />
+    <ClCompile Include="Source\Logic\IGameLayer.cpp" />
+    <ClCompile Include="Source\Logic\IGameLayer.gen.cpp" />
+    <ClCompile Include="Source\Logic\Processes\AnimationProcess.cpp" />
+    <ClCompile Include="Source\Logic\Processes\IProcess.cpp" />
+    <ClCompile Include="Source\Logic\Processes\ProcessManager.cpp" />
+    <ClCompile Include="Source\Logic\Tiles\Layer.cpp" />
+    <ClCompile Include="Source\Logic\Tiles\Map.cpp" />
+    <ClCompile Include="Source\Logic\Tiles\Tileset.cpp" />
+    <ClCompile Include="Source\Logic\World.cpp" />
+    <ClCompile Include="Source\PCG\BspTree.cpp" />
+    <ClCompile Include="Source\PCG\BspTreeNode.cpp" />
+    <ClCompile Include="Source\PCG\CellularAutomaton.cpp" />
+    <ClCompile Include="Source\Utilities\DateTime.cpp" />
+    <ClCompile Include="Source\Utilities\FileUtil.cpp" />
+    <ClCompile Include="Source\Utilities\Noise.cpp" />
+    <ClCompile Include="Source\Utilities\Rng.cpp" />
+    <ClCompile Include="Source\Utilities\Utilities.cpp" />
+    <ClCompile Include="Source\Views\IView.cpp" />
+    <ClCompile Include="ThirdParty\TinyXML\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Logic\Actor.gen.h" />
+    <ClInclude Include="Source\Application\ApplicationLayer.h" />
+    <ClInclude Include="Source\Application\Resources\IResource.h" />
+    <ClInclude Include="Source\Application\Resources\MusicResource.h" />
+    <ClInclude Include="Source\Application\Resources\ResourceFile.h" />
+    <ClInclude Include="Source\Application\Resources\SoundResource.h" />
+    <ClInclude Include="Source\Application\Resources\TextureResource.h" />
+    <ClInclude Include="Source\Application\Systems\ISystem.h" />
+    <ClInclude Include="Source\Application\Systems\WindowsSystem.h" />
+    <ClInclude Include="Source\Application\Window\IWindow.h" />
+    <ClInclude Include="Source\Application\Window\SFMLWindow.h" />
+    <ClInclude Include="Source\Audio\IAudioSystem.h" />
+    <ClInclude Include="Source\Audio\IMusic.h" />
+    <ClInclude Include="Source\Audio\ISoundEffect.h" />
+    <ClInclude Include="Source\Audio\SFMLAudioSystem.h" />
+    <ClInclude Include="Source\Audio\SFMLMusic.h" />
+    <ClInclude Include="Source\Audio\SFMLSoundEffect.h" />
+    <ClInclude Include="Source\Common.h" />
+    <ClInclude Include="Source\Graphics\IGraphics.h" />
+    <ClInclude Include="Source\Graphics\ITexture.h" />
+    <ClInclude Include="Source\Graphics\SfmlDebugPhysicsRenderer.h" />
+    <ClInclude Include="Source\Graphics\SFMLGraphics.h" />
+    <ClInclude Include="Source\Graphics\SFMLTexture.h" />
+    <ClInclude Include="Source\Input\IKeyboard.h" />
+    <ClInclude Include="Source\Input\IMouse.gen.h" />
+    <ClInclude Include="Source\Input\IMouse.h" />
+    <ClInclude Include="Source\Input\IKeyboard.gen.h" />
+    <ClInclude Include="Source\Input\KeyMap.h" />
+    <ClInclude Include="Source\Logger\Logger.h" />
+    <ClInclude Include="Source\Logic\Actor.h" />
+    <ClInclude Include="Source\Logic\ActorFactory.h" />
+    <ClInclude Include="Source\Logic\Animation.h" />
+    <ClInclude Include="Source\Logic\AnimationManager.h" />
+    <ClInclude Include="Source\Logic\Components\AnimationComponent.h" />
+    <ClInclude Include="Source\Logic\Components\ColliderComponent.h" />
+    <ClInclude Include="Source\Logic\Components\IComponent.h" />
+    <ClInclude Include="Source\Logic\Components\IDrawableComponent.h" />
+    <ClInclude Include="Source\Logic\Components\RenderBoxComponent.h" />
+    <ClInclude Include="Source\Logic\Components\RigidBodyComponent.gen.h" />
+    <ClInclude Include="Source\Logic\Components\RigidBodyComponent.h" />
+    <ClInclude Include="Source\Logic\Components\SpriteComponent.h" />
+    <ClInclude Include="Source\Logic\Components\TextComponent.h" />
+    <ClInclude Include="Source\Logic\Components\TransformComponent.gen.h" />
+    <ClInclude Include="Source\Logic\Components\TransformComponent.h" />
+    <ClInclude Include="Source\Logic\Components\TriggerComponent.h" />
+    <ClInclude Include="Source\Logic\Events\CollisionEvent.h" />
+    <ClInclude Include="Source\Logic\Events\EventDispatcher.h" />
+    <ClInclude Include="Source\Logic\Events\IEvent.h" />
+    <ClInclude Include="Source\Logic\Grid\GridSystem.h" />
+    <ClInclude Include="Source\Logic\Grid\GridTile.h" />
+    <ClInclude Include="Source\Logic\IGameLayer.gen.h" />
+    <ClInclude Include="Source\Logic\IGameLayer.h" />
+    <ClInclude Include="Source\Logic\Processes\AnimationProcess.h" />
+    <ClInclude Include="Source\Logic\Processes\IProcess.h" />
+    <ClInclude Include="Source\Logic\Processes\ProcessManager.h" />
+    <ClInclude Include="Source\Logic\Tiles\Layer.h" />
+    <ClInclude Include="Source\Logic\Tiles\Map.h" />
+    <ClInclude Include="Source\Logic\Tiles\Tile.h" />
+    <ClInclude Include="Source\Logic\Tiles\Tileset.h" />
+    <ClInclude Include="Source\Logic\World.h" />
+    <ClInclude Include="Source\PCG\BspTree.h" />
+    <ClInclude Include="Source\PCG\BspTreeNode.h" />
+    <ClInclude Include="Source\PCG\CellularAutomaton.h" />
+    <ClInclude Include="Source\PCG\GraphCommon.h" />
+    <ClInclude Include="Source\Utilities\Color.h" />
+    <ClInclude Include="Source\Utilities\DateTime.h" />
+    <ClInclude Include="Source\Utilities\FileUtil.h" />
+    <ClInclude Include="Source\Utilities\Hasher.h" />
+    <ClInclude Include="Source\Utilities\Noise.h" />
+    <ClInclude Include="Source\Utilities\RectFloat.h" />
+    <ClInclude Include="Source\Utilities\RectInt.h" />
+    <ClInclude Include="Source\Utilities\Rng.h" />
+    <ClInclude Include="Source\Utilities\Utilities.h" />
+    <ClInclude Include="Source\Utilities\Vector2f.h" />
+    <ClInclude Include="Source\Views\IView.h" />
+    <ClInclude Include="ThirdParty\TinyXML\tinyxml2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

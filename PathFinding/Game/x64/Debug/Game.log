@@ -1,0 +1,21 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (GAP321.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  0 File(s) copied
+  0 File(s) copied
+  Graph.cpp
+  GraphNode.cpp
+  GraphRule.cpp
+  AIComponent.cpp
+  ChaseBehavior.cpp
+  IBehavior.cpp
+  IdleBehavior.cpp
+  PatrolBehavior.cpp
+  SpeakBehavior.cpp
+  TeleportBehavior.cpp
+  TurnBehavior.cpp
+  GameApp.cpp
+  GameLogic.cpp
+  Main.cpp
+  tinyxml2.cpp
+  Generating Code...
+     Creating library C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\GAP321\Builds\x64_Debug\PathFinding.lib and object C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\GAP321\Builds\x64_Debug\PathFinding.exp
+  Game.vcxproj -> C:\Users\myles\Dropbox (Self Storage 1)\Desktop\CardiffMyles_GAP321_Mod03\GAP321\Builds\x64_Debug\PathFinding.exe

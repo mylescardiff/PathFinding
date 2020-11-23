@@ -1,0 +1,36 @@
+#pragma once
+/** \file $file_name.h */
+// Created by Myles Cardiff
+
+#include "$path_to_parent.h"
+
+namespace slth
+{
+/// <summary>
+/// TODO: $file_name class
+/// </summary>
+class $class_name
+	: public $parent_name
+{
+public:
+	
+	
+	/// <summary>
+	/// Default Constructor
+	/// </summary>
+	$class_name();
+
+
+
+private:
+	
+
+
+public:
+	// --------------------------------------------------------------------- //
+	// Accessors & Mutators
+	// --------------------------------------------------------------------- //
+
+
+};
+}

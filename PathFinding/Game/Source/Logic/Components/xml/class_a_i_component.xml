@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_a_i_component" kind="class" language="C++" prot="public">
+    <compoundname>AIComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IComponent</basecompoundref>
+    <includes refid="_a_i_component_8h" local="no">AIComponent.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_a_i_component_1a87fe31167c44739e42ba9930a88535cc" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr Id</type>
+        <definition>constexpr Id AIComponent::Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+<para>Complie-time unique ID (int) for the component type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="30" column="21" bodyfile="AIComponent.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_i_component_1a96dffb2f753fb6a8d8c6b3e6ab98cd6c" prot="private" static="no" mutable="no">
+        <type>AIState</type>
+        <definition>AIState AIComponent::m_state</definition>
+        <argsstring></argsstring>
+        <name>m_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="91" column="9" bodyfile="AIComponent.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_i_component_1a5366a1e41c063724207a830cf496bdd3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; slth::Vector2 &gt;</type>
+        <definition>std::vector&lt;slth::Vector2&gt; AIComponent::m_waypoints</definition>
+        <argsstring></argsstring>
+        <name>m_waypoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="92" column="13" bodyfile="AIComponent.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_i_component_1ae9bff40d2c5ced5309cef136d1ff4f2d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AIComponent::m_currentWaypointTarget</definition>
+        <argsstring></argsstring>
+        <name>m_currentWaypointTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="93" column="8" bodyfile="AIComponent.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_i_component_1a871cf8e36ed8e99277507cf12f5f5450" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AIComponent::m_travelSpeed</definition>
+        <argsstring></argsstring>
+        <name>m_travelSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="94" column="7" bodyfile="AIComponent.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_i_component_1aae6c12703d2170184e41fa1be60d72c7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AIComponent::m_acceleration</definition>
+        <argsstring></argsstring>
+        <name>m_acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="95" column="7" bodyfile="AIComponent.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_i_component_1aad1cb951d005d2a5cd692e29e9a2c0f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const Id</type>
+        <definition>virtual const Id AIComponent::GetIdentifier</definition>
+        <argsstring>() override</argsstring>
+        <name>GetIdentifier</name>
+        <briefdescription>
+<para>Get the unique identifier for this component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Unsigned int unique ID</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="36" column="18" bodyfile="AIComponent.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1aa08e535aa46d8d8da66801651956ea39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* AIComponent::GetName</definition>
+        <argsstring>() override</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Get the name of this component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String unique name</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="42" column="20" bodyfile="AIComponent.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1ac0e093b9d74e3a103d93d843a1795a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AIComponent::AIComponent</definition>
+        <argsstring>()</argsstring>
+        <name>AIComponent</name>
+        <briefdescription>
+<para>Default Constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="51" column="1" bodyfile="AIComponent.cpp" bodystart="6" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a871e9894512a70a824f774c98df402f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AIComponent::~AIComponent</definition>
+        <argsstring>()</argsstring>
+        <name>~AIComponent</name>
+        <briefdescription>
+<para>This is here because without it, there&apos;s a heap corruption issue deleting the component. Not sure why but I think it has something to do with this component being in the game logic and being deleted from Engine logic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="58" column="9" bodyfile="AIComponent.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a9717b6e1d76b99ef8479bf5586258c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IComponent *</type>
+        <definition>slth::IComponent * AIComponent::Copy</definition>
+        <argsstring>(slth::Actor *pNewOwner) override</argsstring>
+        <name>Copy</name>
+        <param>
+          <type>slth::Actor *</type>
+          <declname>pNewOwner</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of the transform component </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pNewOwner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new owning actor of this component</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the new copy</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="65" column="20" bodyfile="AIComponent.cpp" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a9f5ee23b9b2b76fd54216f53b89cbca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool AIComponent::Init</definition>
+        <argsstring>(XmlData *xmlElement) override</argsstring>
+        <name>Init</name>
+        <param>
+          <type>XmlData *</type>
+          <declname>xmlElement</declname>
+        </param>
+        <briefdescription>
+<para>Initilizes the transform component from XML node (see /data/actors.xml for syntax) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xmlElement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tinyxml node pointer contianing the data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="72" column="14" bodyfile="AIComponent.cpp" bodystart="28" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a2186f6a57afe719ec1cd7a512bdf2899" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool AIComponent::PostInit</definition>
+        <argsstring>() override</argsstring>
+        <name>PostInit</name>
+        <briefdescription>
+<para>This does nothing at the moment </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="78" column="14" bodyfile="AIComponent.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a93c876fd6e3c8e13b5833dc0f36f589d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AIComponent::Update</definition>
+        <argsstring>(float deltaTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>Updates the transform and velocity based on info from the AI </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame time</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="84" column="6" bodyfile="AIComponent.cpp" bodystart="62" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_component_1a7dd4ac557851fc8d197f74588f596b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>AIState</type>
+        <definition>AIState AIComponent::GetState</definition>
+        <argsstring>()</argsstring>
+        <name>GetState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AIComponent.h" line="108" column="9" bodyfile="AIComponent.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Adds some AI functionality to the actor </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>slth::IComponent</label>
+      </node>
+      <node id="1">
+        <label>AIComponent</label>
+        <link refid="class_a_i_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>slth::IComponent</label>
+      </node>
+      <node id="1">
+        <label>AIComponent</label>
+        <link refid="class_a_i_component"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AIComponent.h" line="21" column="1" bodyfile="AIComponent.h" bodystart="19" bodyend="111"/>
+    <listofallmembers>
+      <member refid="class_a_i_component_1ac0e093b9d74e3a103d93d843a1795a95" prot="public" virt="non-virtual"><scope>AIComponent</scope><name>AIComponent</name></member>
+      <member refid="class_a_i_component_1a9717b6e1d76b99ef8479bf5586258c80" prot="public" virt="virtual"><scope>AIComponent</scope><name>Copy</name></member>
+      <member refid="class_a_i_component_1aad1cb951d005d2a5cd692e29e9a2c0f1" prot="public" virt="virtual"><scope>AIComponent</scope><name>GetIdentifier</name></member>
+      <member refid="class_a_i_component_1aa08e535aa46d8d8da66801651956ea39" prot="public" virt="virtual"><scope>AIComponent</scope><name>GetName</name></member>
+      <member refid="class_a_i_component_1a7dd4ac557851fc8d197f74588f596b78" prot="public" virt="non-virtual"><scope>AIComponent</scope><name>GetState</name></member>
+      <member refid="class_a_i_component_1a87fe31167c44739e42ba9930a88535cc" prot="public" virt="non-virtual"><scope>AIComponent</scope><name>Identifier</name></member>
+      <member refid="class_a_i_component_1a9f5ee23b9b2b76fd54216f53b89cbca1" prot="public" virt="virtual"><scope>AIComponent</scope><name>Init</name></member>
+      <member refid="class_a_i_component_1aae6c12703d2170184e41fa1be60d72c7" prot="private" virt="non-virtual"><scope>AIComponent</scope><name>m_acceleration</name></member>
+      <member refid="class_a_i_component_1ae9bff40d2c5ced5309cef136d1ff4f2d" prot="private" virt="non-virtual"><scope>AIComponent</scope><name>m_currentWaypointTarget</name></member>
+      <member refid="class_a_i_component_1a96dffb2f753fb6a8d8c6b3e6ab98cd6c" prot="private" virt="non-virtual"><scope>AIComponent</scope><name>m_state</name></member>
+      <member refid="class_a_i_component_1a871cf8e36ed8e99277507cf12f5f5450" prot="private" virt="non-virtual"><scope>AIComponent</scope><name>m_travelSpeed</name></member>
+      <member refid="class_a_i_component_1a5366a1e41c063724207a830cf496bdd3" prot="private" virt="non-virtual"><scope>AIComponent</scope><name>m_waypoints</name></member>
+      <member refid="class_a_i_component_1a2186f6a57afe719ec1cd7a512bdf2899" prot="public" virt="virtual"><scope>AIComponent</scope><name>PostInit</name></member>
+      <member refid="class_a_i_component_1a93c876fd6e3c8e13b5833dc0f36f589d" prot="public" virt="non-virtual"><scope>AIComponent</scope><name>Update</name></member>
+      <member refid="class_a_i_component_1a871e9894512a70a824f774c98df402f7" prot="public" virt="virtual"><scope>AIComponent</scope><name>~AIComponent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
